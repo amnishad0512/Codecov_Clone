@@ -1,0 +1,122 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.main-div {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+.left {
+  background-color: #0f1b29;
+  width: 50%;
+}
+.right {
+  width: 50%;
+}
+.left > img {
+  width: 190px;
+  margin: 30px 0px 0px 80px;
+}
+.left > img ~ div {
+  margin: 25vh auto;
+  width: 450px;
+  height: 250px;
+  font-family: "Poppins", sans-serif;
+  line-height: 32px;
+}
+.left > img ~ div > p:first-child {
+  font-size: 32px;
+  color: white;
+  margin-bottom: 12px;
+  font-weight: bolder;
+}
+.left > img ~ div > p > span {
+  color: #ff0077;
+}
+.left > img ~ div > p:nth-child(2) {
+  margin-bottom: 20px;
+  color: white;
+}
+.left > img ~ div > p:nth-child(3) > span {
+  color: #ff0077;
+}
+.left > img ~ div > p:nth-child(3) {
+  color: white;
+}
+.right > div {
+  display: grid;
+  margin: 23vh auto;
+  width: 450px;
+  /* background-color: red; */
+  height: 400px;
+  font-family: Arial Semibold;
+  font-size: 13px;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 10px 40px 10px 40px 10px 40px 10px 120px 52px;
+  grid-template-areas:
+    "fname lname"
+    "fname-ip lname-ip"
+    "email phone"
+    "email-ip phone-ip"
+    "opn opn"
+    "opn-ip opn-ip"
+    "msg msg"
+    "msg-ip msg-ip"
+    "submit-btn submit-btn";
+  grid-row-gap: 10px;
+  grid-column-gap: 7px;
+}
+.right > div > input,
+.right > div > select {
+  border: 1px solid thistle;
+  border-radius: 4px;
+}
+.fname {
+  grid-area: fname;
+}
+.fname-ip {
+  grid-area: fname-ip;
+}
+.lname {
+  grid-area: lname;
+}
+.lname-ip {
+  grid-area: lname-ip;
+}
+.email {
+  grid-area: email;
+}
+.email-ip {
+  grid-area: email-ip;
+}
+.phone {
+  grid-area: phone;
+}
+.phone-ip {
+  grid-area: phone-ip;
+}
+.opn {
+  grid-area: opn;
+}
+.opn-ip {
+  grid-area: opn-ip;
+}
+.msg {
+  grid-area: msg;
+}
+.msg-ip {
+  grid-area: msg-ip;
+}
+.submit-btn {
+  grid-area: submit-btn;
+  background-color: #ff0077;
+  color: white;
+  border-radius: 6px;
+  border: 1px solid #ff0077;
+  font-size: 18px;
+  font-weight: 600;
+}
+.color {
+  color: #ff0077;
+}
