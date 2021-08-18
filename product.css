@@ -6,32 +6,26 @@ body {
 .row-1 {
     padding-top: 10px ;
     display: flex;
-    color: #0f1b29;
-    /* flex: 0 0 100%; */
-    width: 100%;
+    width: 90%;
+    margin: auto;
 }
-.products, .solutions, .customers, .resources, .pricing, .contact, .login, .signup {
-    margin-top: 1%;
-    margin-left: 5px;
-    padding: 10px;
-    font-size: 16px;
-    width: 5%;
-}
-.login {
-    padding-left: 3%;
+.row-1 > h5 {
+    margin: 15px;
+    font-size: 14px;
+    width: 20%;
 }
 .signup {
     background-color: black;
     color: white;
     border-radius: 5px;
-    margin-left: 0px;
+    padding: 2px;
+    text-align: center;
 }
 .logo {
     width: 160px;
-    margin-right: 75px;
-    margin-left: 50px;
     padding: 5px;
-    padding-right: 50px;
+    padding-right: 75px;
+    padding-left: 50px;
 }
 h1{
     text-align: center;
