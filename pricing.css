@@ -1,0 +1,80 @@
+body {
+    background-color: #f0def4;
+    width: 99%;
+    font-family: "poppins",-apple-system,BlinkMacSystemFont,Roboto,"Arial",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+.row-1 {
+    padding-top: 2% ;
+    display: flex;
+    width: 85%;
+    padding-left:10% ;
+}
+.row-1 > h5 {
+    margin: 1.5% -1%;
+    font-size: 14px;
+    width: 10%;
+
+}
+.login{
+    padding-left: 10%;
+    padding-right: 0%;
+}
+.signup {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 2px;
+    text-align: center;
+}
+.logo {
+    width: 160px;
+    padding: 5px;
+    padding-right: 70px;
+    padding-left: 10px;
+}
+h1{
+    text-align: center;
+    font-size: 45px;
+}
+.page_head{
+    padding: 35px ;
+}
+.pricing-tables-container{ 
+    display: flex;
+    padding-left: 7% ;
+}
+
+.pricing-tables {
+    margin-left: 3%;
+    border: 1px solid black;
+    width: 20%;
+    min-width: 100px;
+    background-color: white;
+    text-align: center;
+    height: 500px;
+}
+.pricing-tables > img{
+    height: 150px;
+    min-height: 100px;
+}
+.table-container{
+    width: 100%;
+}
+p+a{
+    border-radius: 5px;
+    background-color: rgb(0,178,255);
+    padding: 10px 30px;
+    margin: 5px ;
+    color: white;
+}
+h6{
+    color: rgb(240,31,122);
+    font-size:18px ;
+}
+h5, h5+p{
+    color: gray;
+
+}
+p{
+    font-size: 13px; ;
+}
