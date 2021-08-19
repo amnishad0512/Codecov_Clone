@@ -1,37 +1,38 @@
 body {
-    background-color: #f0def4;
     width: 99%;
+    background-color: #f8f9fa;
     font-family: "poppins",-apple-system,BlinkMacSystemFont,Roboto,"Arial",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
 .row-1 {
-    padding-top: 2% ;
+    padding-top: 10px ;
     display: flex;
-    width: 85%;
-    padding-left:10% ;
+    width: 90%;
+    margin: auto;
 }
-.row-1 > h5 {
-    margin: 1.5% -1%;
-    font-size: 14px;
-    width: 10%;
-
-}
-.login{
-    padding-left: 10%;
-    padding-right: 0%;
+.row-1 > a {
+    margin: 10px;
+    font-size: 18px;
+    width: 20%;
+    text-decoration: none;
+    color: black ;
+} .row-1  h5 {
+    color: black;
 }
 .signup {
     background-color: black;
-    color: white;
+    color: white !important;
     border-radius: 5px;
-    padding: 2px;
     text-align: center;
+    padding: 2px;
 }
 .logo {
     width: 160px;
     padding: 5px;
-    padding-right: 70px;
-    padding-left: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 8px;
 }
+
 h1{
     text-align: center;
     font-size: 45px;
