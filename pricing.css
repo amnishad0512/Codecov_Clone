@@ -1,6 +1,11 @@
 body {
+<<<<<<< HEAD
     width: 99%;
     background-color: #f8f9fa;
+=======
+    background-color: #f8f9fa;
+    width: 100%;
+>>>>>>> 7275d0bb4631f64f21e926836e7f2d68540128b3
     font-family: "poppins",-apple-system,BlinkMacSystemFont,Roboto,"Arial",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
 .row-1 {
@@ -14,8 +19,11 @@ body {
     font-size: 18px;
     width: 20%;
     text-decoration: none;
+<<<<<<< HEAD
     color: black ;
 } .row-1  h5 {
+=======
+>>>>>>> 7275d0bb4631f64f21e926836e7f2d68540128b3
     color: black;
 }
 .signup {
@@ -53,6 +61,7 @@ h1{
     background-color: white;
     text-align: center;
     height: 500px;
+    line-height:15px ;
 }
 .pricing-tables > img{
     height: 150px;
@@ -72,10 +81,31 @@ h6{
     color: rgb(240,31,122);
     font-size:18px ;
 }
-h5, h5+p{
+h3+h5, h5+p{
     color: gray;
-
+    
 }
 p{
     font-size: 13px; ;
+}
+.color-pink{
+    color: rgb(240,31,122);
+}
+.payment{
+    background: rgb(233, 236, 239);
+    margin: 12px auto;
+    border-radius: 20px;
+    width: auto;
+    display: inline-flex;
+    padding: 8px 16px;
+}
+div > label:nth-child(1){
+    border-radius: 20px;
+    padding: 8px 16px;
+    background-color: #f3d3e1;
+    border:1px solid rgb(240,31,122);
+}
+a{
+    text-align: center;
+    font-weight: 300;
 }
