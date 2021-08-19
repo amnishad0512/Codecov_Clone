@@ -78,17 +78,24 @@
             <div class="pricing-tables">
                 <img src="https://about.codecov.io/wp-content/themes/codecov/assets/brand/icons/umbrellas/gazeebo.svg" alt="umbrella-stand">
                 <h6>Enterprise</h6>
-                <h3 id="enterprise">$30K<span class="color-pink">*</span><small> Annual Min</small></h3>
+                <div id="enter_cloud">
+                <h3>$30K<span class="color-pink">*</span><small> Annual Min</small></h3>
+                
                 <h5>150+ Users</h5>
                 <p>Best for large teams with many projects that require robust security, control, and visibility.</p>
+            </div>
+            <div id="enter_self">
+                <h3 >$50K<span class="color-pink">*</span><small> Annual Min</small></h3>
+                
+                <h5>150+ Users</h5>
+                <p>Best for large teams with many projects that require robust security, control, and visibility on their own infrastructure.</p>
+            </div>
                 <div class="payment">
-                    <div class="">
-                        <label>Cloud</label> 
+                    <div >
+                        <label id="cloud">Cloud</label> 
                     </div> 
-                <div>
-                    <label>
-                     Self-Hosted
-                    </label>
+                <div >
+                    <label id="self">Self-Hosted</label>
                      </div>
                     </div>
                 <p></p>
@@ -103,13 +110,22 @@
     var monthly=document.getElementById("monthly");
     var pro_annual = document.getElementById("pro")
     var pro_month = document.getElementById("pro_month")
-    
+    var cloud = document.getElementById("cloud");
+    var self = document.getElementById("self");
     annual.style.border = " 1px solid rgb(240,31,122)";
-    annual.style.backgroundColor = "#f3d3e1"
-    console.log(annual,monthly)
+    annual.style.backgroundColor = "#f3d3e1";
+    cloud.style.border = "1px solid rgb(240,31,122)";
+        cloud.style.backgroundColor = "#f3d3e1";
+    // console.log(annual,monthly)
     function color_pink_annual(){
         annual.style.border = " 1px solid rgb(240,31,122)";
         annual.style.backgroundColor = "#f3d3e1"
+        remove_pink_monthly();
+    }
+    function color_pink_monthly(){
+        monthly.style.border = " 1px solid rgb(240,31,122)";
+        monthly.style.backgroundColor = "#f3d3e1"
+        remove_pink_annual();
     }
     function remove_pink_annual(){
         annual.style.border = "";
@@ -123,17 +139,36 @@
         monthly.style.border = "";
         monthly.style.backgroundColor = "";
         pro_annual.style.display = "block";
-
         pro_month.style.display = "none";
         
     }
-    function color_pink_monthly(){
-        monthly.style.border = " 1px solid rgb(240,31,122)";
-        monthly.style.backgroundColor = "#f3d3e1"
+    function color_pink_cloud(){
+        cloud.style.border = "1px solid rgb(240,31,122)";
+        cloud.style.backgroundColor = "#f3d3e1"
+        remove_pink_self();
+    }
+    function color_pink_self(){
+        self.style.border = "1px solid rgb(240,31,122)";
+        self.style.backgroundColor = "#f3d3e1"
+        remove_pink_cloud();
+    }
+    function remove_pink_self(){
+        self.style.border = "";
+        self.style.backgroundColor= "";
+        enter_self.style.display = "none";
+        enter_cloud.style.display = "block";
+        
+    }
+    function remove_pink_cloud(){
+        cloud.style.border = "";
+        cloud.style.backgroundColor= "";
+        enter_cloud.style.display = "none";
+        enter_self.style.display = "block";
+        
     }
     annual.addEventListener("click",color_pink_annual);
-    monthly.addEventListener("click",remove_pink_annual);
     monthly.addEventListener("click",color_pink_monthly)
-    annual.addEventListener("click",remove_pink_monthly);
+    cloud.addEventListener("click",color_pink_cloud)
+    self.addEventListener("click",color_pink_self)
 </script>
 </html>
