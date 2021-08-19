@@ -12,11 +12,12 @@ body {
     width: 90%;
     margin: auto;
 }
-.row-1 > h5 {
-    margin: 15px;
-    font-size: 14px;
+.row-1 > a {
+    margin: 10px;
+    font-size: 18px;
     width: 20%;
     text-decoration: none;
+    color: black;
 }
 .signup {
     background-color: black;
@@ -28,8 +29,9 @@ body {
 .logo {
     width: 160px;
     padding: 5px;
-    padding-right: 75px;
-    padding-left: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 8px;
 }
 .row-2 {
     display: flex;
@@ -39,8 +41,9 @@ body {
 .row-2-content> h1{
     font-size: 48px;
     margin-top: 75px;
-    font-weight: 1000;
+    font-weight: 800;
     text-align: left;
+
 }
 .content-pink-h1 {
     color: #f72585;

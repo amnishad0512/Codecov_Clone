@@ -9,10 +9,12 @@ body {
     width: 90%;
     margin: auto;
 }
-.row-1 > h5 {
-    margin: 15px;
-    font-size: 14px;
+.row-1 > a {
+    margin: 10px;
+    font-size: 18px;
     width: 20%;
+    text-decoration: none;
+    color: black;
 }
 .signup {
     background-color: black;
@@ -24,8 +26,9 @@ body {
 .logo {
     width: 160px;
     padding: 5px;
-    padding-right: 75px;
-    padding-left: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 8px;
 }
 h1{
     text-align: center;
@@ -63,3 +66,47 @@ a{
     width: 50%;
     float: left;
 }
+.row-12 {
+    width: 40%;
+    margin: auto;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    margin-top: 75px;
+    padding: 25px;
+}
+.row-12 > button{
+    width: 25%;
+    margin: 3px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    padding: 5px;
+    text-align: center;
+}
+.row-12 > button > img {
+    width: 25%; 
+    margin-right: 5px ;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.row-13 {
+    margin: auto;
+    margin-top: 75px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    padding-left: 140px;
+    display: flex;
+}
+.row-13 > div~h4, .row-13>div>h4~p {
+    margin: 0%;
+    padding: 5px;
+    font-size: 14px;
+}
+.row-13 > div {
+    width: 16%;
+}
+ 
