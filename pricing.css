@@ -70,7 +70,7 @@ h6{
     color: rgb(240,31,122);
     font-size:18px ;
 }
-h5, h5+p{
+h3+h5, h5+p{
     color: gray;
     
 }
