@@ -1,11 +1,6 @@
 body {
-<<<<<<< HEAD
-    width: 99%;
-    background-color: #f8f9fa;
-=======
     background-color: #f8f9fa;
     width: 100%;
->>>>>>> 7275d0bb4631f64f21e926836e7f2d68540128b3
     font-family: "poppins",-apple-system,BlinkMacSystemFont,Roboto,"Arial",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
 .row-1 {
@@ -19,11 +14,6 @@ body {
     font-size: 18px;
     width: 20%;
     text-decoration: none;
-<<<<<<< HEAD
-    color: black ;
-} .row-1  h5 {
-=======
->>>>>>> 7275d0bb4631f64f21e926836e7f2d68540128b3
     color: black;
 }
 .signup {
