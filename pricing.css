@@ -1,6 +1,6 @@
 body {
     background-color: #f8f9fa;
-    width: 100%;
+    width: 99%;
     font-family: "poppins",-apple-system,BlinkMacSystemFont,Roboto,"Arial",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
 .row-1 {
@@ -92,10 +92,15 @@ p{
 div > label:nth-child(1){
     border-radius: 20px;
     padding: 8px 16px;
-    background-color: #f3d3e1;
-    border:1px solid rgb(240,31,122);
 }
 a{
     text-align: center;
     font-weight: 300;
 }
+#pro_month{
+    display: none;
+}
+/* #annual{
+    border :  1px solid rgb(240,31,122);
+    background-Color :#f3d3e1;
+} */

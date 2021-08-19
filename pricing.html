@@ -56,15 +56,20 @@
             <div class="pricing-tables">
                 <img src="https://about.codecov.io/wp-content/themes/codecov/assets/brand/icons/umbrellas/tent.svg" alt="umbrella-stand">
                 <h6>Pro</h6>
+                <div id="pro">
                 <h3>$10<span class="color-pink">*</span><small> Per User / Month</small></h3>
+            </div>
+            <div id="pro_month">
+                <h3>$12<span class="color-pink">*</span><small> Per User / Month</small></h3>
+            </div>
                 <h5>5-150 Users</h5>
                 <p>Best for medium sized teams with numerous projects that need code coverage, reporting, and reliable support.</p>
                 <div class="payment">
                     <div>
-                    <label class="form-check-label active">Annual</label> 
+                    <label id="annual">Annual</label> 
                 </div> 
                 <div>
-                    <label class="form-check-label false">Monthly</label>
+                    <label id="monthly">Monthly</label>
                  </div>
                 </div>
                 <p></p>
@@ -73,11 +78,11 @@
             <div class="pricing-tables">
                 <img src="https://about.codecov.io/wp-content/themes/codecov/assets/brand/icons/umbrellas/gazeebo.svg" alt="umbrella-stand">
                 <h6>Enterprise</h6>
-                <h3>$30K<span class="color-pink">*</span><small> Annual Min</small></h3>
+                <h3 id="enterprise">$30K<span class="color-pink">*</span><small> Annual Min</small></h3>
                 <h5>150+ Users</h5>
                 <p>Best for large teams with many projects that require robust security, control, and visibility.</p>
                 <div class="payment">
-                    <div class="form-check form-check-inline">
+                    <div class="">
                         <label>Cloud</label> 
                     </div> 
                 <div>
@@ -93,4 +98,42 @@
         </div>
     <a class="color-pink"><h4>See Features</h4></a>
 </body>
+<script>
+    var annual=document.getElementById("annual")
+    var monthly=document.getElementById("monthly");
+    var pro_annual = document.getElementById("pro")
+    var pro_month = document.getElementById("pro_month")
+    
+    annual.style.border = " 1px solid rgb(240,31,122)";
+    annual.style.backgroundColor = "#f3d3e1"
+    console.log(annual,monthly)
+    function color_pink_annual(){
+        annual.style.border = " 1px solid rgb(240,31,122)";
+        annual.style.backgroundColor = "#f3d3e1"
+    }
+    function remove_pink_annual(){
+        annual.style.border = "";
+        annual.style.backgroundColor= "";
+        pro_annual.style.display = "none";
+        pro_month.style.display = "block";
+        
+    }
+
+    function remove_pink_monthly(){
+        monthly.style.border = "";
+        monthly.style.backgroundColor = "";
+        pro_annual.style.display = "block";
+
+        pro_month.style.display = "none";
+        
+    }
+    function color_pink_monthly(){
+        monthly.style.border = " 1px solid rgb(240,31,122)";
+        monthly.style.backgroundColor = "#f3d3e1"
+    }
+    annual.addEventListener("click",color_pink_annual);
+    monthly.addEventListener("click",remove_pink_annual);
+    monthly.addEventListener("click",color_pink_monthly)
+    annual.addEventListener("click",remove_pink_monthly);
+</script>
 </html>
