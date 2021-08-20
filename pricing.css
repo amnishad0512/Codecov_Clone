@@ -158,3 +158,20 @@ padding-left:10px ;
 .faq >div{
     display: none;
 }
+.row-13 {
+    margin: auto;
+    margin-top: 75px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    padding-left: 140px;
+    display: flex;
+}
+.row-13 > div~h4, .row-13>div>h4~p {
+    margin: 0%;
+    padding: 5px;
+    font-size: 14px;
+}
+.row-13 > div {
+    width: 16%;
+}
