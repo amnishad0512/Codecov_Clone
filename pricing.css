@@ -1,7 +1,7 @@
 body {
     background-color: #f8f9fa;
     width: 99%;
-    font-family: "poppins",-apple-system,BlinkMacSystemFont,Roboto,"Arial",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-family: "poppins",-apple-system,BlinkMacSystemFont,Roboto,"Arial",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"
 }
 .row-1 {
     padding-top: 10px ;
@@ -121,5 +121,40 @@ display: none;
 padding-left:10px ;
 }
 #hide-feature{
+    display: none;
+}
+#faqContainer{
+    width: 60%;
+    margin: 0% auto;
+    /* border: 1px solid black; */
+    /* padding: 0.5%; */
+
+}
+.faq{
+    min-width: 400px;
+    margin-bottom: 10px;
+    border-style: solid;
+    border-width: 0;
+    background-color: #ffffff;
+    padding: 5px 50px;
+    box-shadow: 0px 0px 2px lightgray;
+    width: 80%;
+    border:1px solid lightgray;
+
+}
+.faq >h3 >span{
+    width: 30%;
+    font-size: 30px;
+    margin-left: 20%;
+    padding: 2px;
+    color: teal;
+    text-align: end;
+    border-radius: 10px;
+    background-color: lightgray;
+}
+.faq > h3+div > p{
+    font-size: 16px;
+}
+.faq >div{
     display: none;
 }
