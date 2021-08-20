@@ -42,7 +42,14 @@
                 <h5>Unlimited Users</h5>
                 <p>Codecov will always be free for open source projects, educators, and students.</p>
                 <p><br></p>
-                <a>Get Started</a>
+                <a href="_blank">Get Started</a>
+                <div class="features">
+                <br>
+                <br>
+                <p>Unlimited Public / Private Repositories</p>
+                <hr>
+                <p>SAML Ready</p>
+                </div>
             </div>
         
             <div class="pricing-tables">
@@ -52,7 +59,16 @@
                 <h5>5 Users</h5>
                 <p>Best for small projects or teams that want to ensure their code is covered.</p>
                 <p><br></p>
-                <a>Get Started</a>
+                <a href="_blank">Get Started</a>
+                <div class="features">
+                    <br>
+                    <br>
+                    <p>Unlimited Public / Private Repositories</p>
+                    <hr>
+                    <p>SAML Ready</p>
+                    <hr>
+                    <p>Community Support</p>
+                    </div>
             </div>
             <div class="pricing-tables">
                 <img src="https://about.codecov.io/wp-content/themes/codecov/assets/brand/icons/umbrellas/tent.svg" alt="umbrella-stand">
@@ -74,7 +90,18 @@
                  </div>
                 </div>
                 <p></p>
-                <a>Get Started</a>
+                <a href="_blank">Get Started</a>
+                <div class="features">
+                    <br>
+                    <br>
+                    <p>Unlimited Public / Private Repositories</p>
+                    <hr>
+                    <p>SAML Ready</p>
+                    <hr>
+                    <p>Community Support</p>
+                    <hr>
+                    <p>SOC 2 Type II Report Access</p>
+                    </div>
             </div>
             <div class="pricing-tables">
                 <img src="https://about.codecov.io/wp-content/themes/codecov/assets/brand/icons/umbrellas/gazeebo.svg" alt="umbrella-stand">
@@ -101,10 +128,29 @@
                     </div>
                 <p></p>
                 <a>Contact Us</a>
+                <div class="features">
+                    <br>
+                    <br>
+                    <p>Unlimited Public / Private Repositories</p>
+                    <hr>
+                    <p>SAML Ready</p>
+                    <hr>
+                    <p>Community Support</p>
+                    <hr>
+                    <p>SOC 2 Type II Report Access and Security Audit Assistance</p>
+                    <hr>
+                    <p>Dedicated Account Manager and Onboarding Assistance</p>
+                    <hr>
+                    <p>Beta Access to New Features</p>
+                    </div>
         </div>
         </div>
         </div>
-    <a class="color-pink"><h4>See Features</h4></a>
+        <div class="color-pink" >
+
+            <label id="show-feature"><h4>See Features ↓</h4></label>
+            <label id= "hide-feature"><h4>Hide Features ↑</h4></label>
+        </div>
     <h3 class="text-center">Frequently Asked Questions</h3>
    
 </body>
@@ -115,11 +161,15 @@
     var pro_month = document.getElementById("pro_month")
     var cloud = document.getElementById("cloud");
     var self = document.getElementById("self");
+    var show_features=document.getElementById("show-feature");
+    var hide_features=document.getElementById("hide-feature");
+    var features=document.getElementsByClassName("features")
+    var table = document.getElementsByClassName("pricing-tables")
+
     annual.style.border = " 1px solid rgb(240,31,122)";
     annual.style.backgroundColor = "#f3d3e1";
     cloud.style.border = "1px solid rgb(240,31,122)";
-        cloud.style.backgroundColor = "#f3d3e1";
-    // console.log(annual,monthly)
+    cloud.style.backgroundColor = "#f3d3e1";
     function color_pink_annual(){
         annual.style.border = " 1px solid rgb(240,31,122)";
         annual.style.backgroundColor = "#f3d3e1"
@@ -167,11 +217,30 @@
         cloud.style.backgroundColor= "";
         enter_cloud.style.display = "none";
         enter_self.style.display = "block";
+    }
+    function show_feature(){
+        for (var i = 0; i<features.length;i++){
+        features[i].style.display = "block";
+        table[i].style.height = "800px";
+        }
+        hide_features.style.display = "block";
+        show_features.style.display = "none";
+        
+    }
+    function hide_feature(){
+        for (var i = 0; i<features.length;i++){
+        features[i].style.display = "none";
+        table[i].style.height = "500px";
+        }
+        show_features.style.display = "block";
+        hide_features.style.display = "none";
         
     }
     annual.addEventListener("click",color_pink_annual);
     monthly.addEventListener("click",color_pink_monthly)
     cloud.addEventListener("click",color_pink_cloud)
     self.addEventListener("click",color_pink_self)
+    show_features.addEventListener("click",show_feature)
+    hide_features.addEventListener("click",hide_feature);
 </script>
 </html>
