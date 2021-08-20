@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 .main-div {
   display: flex;
@@ -48,7 +49,6 @@
   display: grid;
   margin: 23vh auto;
   width: 450px;
-  /* background-color: red; */
   height: 400px;
   font-family: Arial Semibold;
   font-size: 13px;
@@ -64,7 +64,7 @@
     "msg msg"
     "msg-ip msg-ip"
     "submit-btn submit-btn";
-  grid-row-gap: 10px;
+  grid-row-gap: 20px;
   grid-column-gap: 7px;
 }
 .right > div > input,
@@ -119,4 +119,140 @@
 }
 .color {
   color: #ff0077;
+}
+@media only screen and (max-width: 992px) {
+  .main-div {
+    flex-direction: column;
+  }
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+  }
+  .left > img ~ div > p:first-child {
+    text-align: center;
+  }
+  .left > img {
+    width: 190px;
+    margin: 10vh 39vw;
+  }
+  .left > img ~ div {
+    margin: -70px auto 0px auto;
+    width: 80%;
+    height:35vh;
+    font-family: "Poppins", sans-serif;
+    line-height: 32px;
+    text-align: center;
+  }
+  .right > div {
+  margin: 8vh auto;
+  width: 80%;
+  }
+}
+@media only screen and (max-width: 870px){
+  .left > img {
+    margin: 10vh 36vw;
+  }
+}
+@media only screen and (max-width: 768px){
+  .left > img ~ div {
+    width: 80%;        
+  }
+}
+@media only screen and (max-width: 700px){
+  .left > img {
+    margin: 10vh 33vw;
+  }
+}
+@media only screen and (max-width: 668px){
+  .left > img ~ div {
+    width: 80%;      
+    height: 39vh;  
+  }
+}
+@media only screen and (max-width: 570px){
+  .left > img {
+    margin: 10vh 31vw;
+  }
+}
+@media only screen and (max-width: 500px){
+  .left > img {
+    margin: 10vh 28vw;
+  }
+}
+@media only screen and (max-width: 482px){
+  .right{
+    width: 50%;
+  }
+  .right > div {
+  margin: 6vh auto;
+  width: 50%;
+  height: 100vh;
+  font-family: Arial Semibold;
+  font-size: 13px;
+  grid-template-columns: 70vw;
+  grid-template-rows: 10px 40px 10px 40px 10px 40px 10px 40px 40px;
+  grid-template-areas:
+    "fname"
+    "fname-ip"
+    "lname"
+     "lname-ip"
+    "email" 
+    "email-ip"
+    "phone"
+     "phone-ip"
+    "opn"
+     "opn-ip"
+    "msg" 
+    "msg-ip" 
+     "submit-btn";
+  grid-row-gap: 20px;
+}
+}
+@media only screen and (max-width: 450px){
+  .left > img {
+    margin: 10vh 26vw;
+  }
+  .left > img ~ div {
+    width: 80%;
+    height:47vh;
+  }
+}
+@media only screen and (max-width: 357px){
+  .left > img {
+    margin: 10vh 26vw;
+  }
+  .left > img ~ div {
+    width: 80%;
+    height:55vh;
+  }
+}
+@media only screen and (max-width: 384px){
+  .left > img {
+    margin: 10vh 23vw;
+  }
+}
+@media only screen and (max-width: 336px){
+  .left > img {
+    margin: 10vh 19vw;
+  }
+}
+@media only screen and (max-width: 279px){
+  .left > img {
+    margin: 10vh 12vw;
+  }
+  .left > img ~ div {
+    width: 80%;
+    height:62vh;
+  }
+}
+@media only screen and (max-width: 260px){
+  .left > img {
+    margin: 10vh 12vw;
+  }
+  .left > img ~ div {
+    width: 80%;
+    height:74vh;
+  }
 }
