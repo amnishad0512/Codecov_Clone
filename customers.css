@@ -29,6 +29,27 @@ body {
     "bottom bottom";
   margin-bottom: 120px;
 }
+.unique {
+  display: grid;
+  margin: 80px auto;
+  width: 949px;
+  height: 662px;
+  grid-template-rows: 520px 100px;
+  grid-template-columns: 444px 395px;
+  grid-row-gap: 40px;
+  grid-column-gap: 100px;
+  grid-template-areas:
+    "right left"
+    "bottom bottom" !important;
+  margin-bottom: 120px;
+}
+.unique > #left {
+  background-color: #401342 !important;
+  margin-left: -75px;
+}
+.unique >#left >div>img{
+  height: 25px !important;
+}
 
 #desc-cont > #left {
   background-color: #3498db;
@@ -155,6 +176,7 @@ select {
   width: 349px;
   height: 36px;
   border-radius: 4px;
+  border: 1px solid gray;
 }
 #bottom {
   display: flex;
