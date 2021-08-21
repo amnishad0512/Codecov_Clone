@@ -7,6 +7,39 @@ body {
   background-color: whitesmoke;
   font-family: "Poppins", sans-serif;
 }
+#container {
+  margin: auto ;
+  font-family: 'Poppins', sans-serif;  
+}
+.row-1 {
+  padding-top: 10px ;
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+.row-1 > a {
+  margin: 10px;
+  font-size: 18px;
+  width: 20%;
+  margin-top: 40px;
+  text-decoration: none;
+  color: black;
+  font-weight: lighter;
+}
+.signup {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  padding: 2px;
+}
+.logo {
+  width: 220px;
+  padding: 5px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 0px;
+}
 .heading {
   font-size: 52px;
   width: 777px;
