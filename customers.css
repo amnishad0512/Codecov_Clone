@@ -32,6 +32,7 @@ body {
 
 #desc-cont > #left {
   background-color: #3498db;
+  /* background-image: url(udaci.jpg); */
   grid-area: left;
   width: 440px;
   height: 520px;
