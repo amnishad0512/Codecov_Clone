@@ -91,3 +91,33 @@ font-size: 14px;
 .row-13 > div {
 width: 16%;
 }
+@media only screen and (min-width: 300px) and (max-width: 900px) {
+    #container {
+        flex-direction: column;
+    }
+    .row-1 {
+        flex-direction: column;
+    }
+    .row-1 > a {
+        text-align: center;
+        margin: auto;
+    }
+    .logo {
+        padding: 0px;
+        margin: auto;
+    }
+    .row-2 {
+        flex-direction: column;
+    }
+    .row-2 > div {
+        width: 100%;
+    }
+    .row-13 {
+        flex-direction: column;
+        text-align: center;
+        padding: 0px;
+    }
+    .row-13 >  div {
+        margin: auto;
+    }
+}
