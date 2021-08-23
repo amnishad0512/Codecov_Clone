@@ -120,7 +120,7 @@ a{
 .row-13 > div {
     width: 16%;
 }
-@media only screen and (min-width: 300px) and (max-width: 900px) {
+@media only screen and (min-width: 300px) and (max-width: 970px) {
     .row-1 {
         display: none;
     }
