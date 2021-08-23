@@ -57,7 +57,6 @@
   }
   .box{
     font-family: 'Poppins', sans-serif;
-
   }
   .flex >div >button>img{
     height: 20px;
@@ -89,11 +88,20 @@
     .main-div {
       flex-direction: column;
     }
+    #box-2>button, #box-3>button,#box-4>button{
+      width: 100%;
+  
+    }
     .left {
       width: 100%;
+      height: 40vh;
     }
     .right {
       width: 100%;
+    }
+    .flex{
+    margin: 10vh auto;
+    width: 80%;
     }
     .left > img ~ div > p:first-child {
       text-align: center;
@@ -109,6 +117,11 @@
       font-family: "Poppins", sans-serif;
       line-height: 32px;
       text-align: center;
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    .left {
+      height: 43vh;
     }
   }
   @media only screen and (max-width: 870px){
@@ -137,12 +150,21 @@
       margin: 10vh 31vw;
     }
   }
+  @media only screen and (max-width: 545px){
+    .left{
+      height: 52vh;
+    }
+  }
   @media only screen and (max-width: 500px){
     .left > img {
       margin: 10vh 28vw;
     }
   }
-  
+  @media only screen and (max-width: 460px){
+    .left{
+      height: 57vh;
+    }
+  }
   @media only screen and (max-width: 450px){
     .left > img {
       margin: 10vh 26vw;
@@ -150,6 +172,16 @@
     .left > img ~ div {
       width: 80%;
       height:47vh;
+    }
+  }
+  @media only screen and (max-width: 384px){
+    .left > img {
+      margin: 10vh 23vw;
+    }
+  }
+  @media only screen and (max-width: 380px){
+    .left{
+      height: 63vh;
     }
   }
   @media only screen and (max-width: 357px){
@@ -161,14 +193,19 @@
       height:55vh;
     }
   }
-  @media only screen and (max-width: 384px){
-    .left > img {
-      margin: 10vh 23vw;
-    }
-  }
   @media only screen and (max-width: 336px){
     .left > img {
       margin: 10vh 19vw;
+    }
+  }
+  @media only screen and (max-width: 323px){
+    .left{
+      height: 73vh;
+    }
+  }
+  @media only screen and (max-width: 282px){
+    .left{
+      height: 85vh;
     }
   }
   @media only screen and (max-width: 279px){
@@ -187,5 +224,30 @@
     .left > img ~ div {
       width: 80%;
       height:74vh;
+    }
+  }
+  @media only screen and (max-width: 246px){
+    .left > img {
+      margin: 12vh 12vw;
+      width: 150px;
+    }
+    .left > img ~ div {
+      width: 80%;
+      height:80vh;
+    }
+  }
+  @media only screen and (max-width: 231px){
+    .left{
+      height: 90vh;
+    }
+  }
+  @media only screen and (max-width: 216px){
+    .left{
+      height: 100vh;
+    }
+  }
+  @media only screen and (max-width: 194px){
+    .left{
+      height: 900px;
     }
   }
