@@ -12,6 +12,9 @@
 <body>
     <div class="main-head">
         <div id="container">
+            <div class="collapsible">
+                <button > NAV</button>
+            </div>
             <div class="row-1">
                 <a class="logo" href="codecov.html">
                     <img class="logo"
@@ -266,6 +269,20 @@
     </div>
 </body>
 <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
     var annual=document.getElementById("annual")
     var monthly=document.getElementById("monthly");
     var pro_annual = document.getElementById("pro")

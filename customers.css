@@ -7,6 +7,49 @@ body {
   background-color: whitesmoke;
   font-family: "Poppins", sans-serif;
 }
+#container {
+  margin: auto ;
+  font-family: 'Poppins', sans-serif;  
+}
+.collapsible{
+  display: none;
+}
+.row-1 {
+  padding-top: 10px ;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  display: flex;
+}
+.row-1 > a {
+  margin: 10px;
+  font-size: 18px;
+  font-weight: normal;
+  width: 20%;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  margin-top: 35px;
+  padding-left: 3px;
+}
+.row-1 > a > h5 {
+  font-weight: normal;
+  font-size: 18px;
+}
+.signup {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+.logo {
+  width: 220px;
+  padding: 3px;
+  padding-right: 40px;
+  padding-left: 30px;
+  padding-top: 0px;
+  margin: 0px;
+}
 .heading {
   font-size: 52px;
   width: 777px;
@@ -186,7 +229,7 @@ select {
 #bottom > img {
   width: 75px;
 }
-#navbar {
+/* #navbar {
   display: flex;
   width: 90%;
   height: 30px;
@@ -217,7 +260,7 @@ select {
 #container {
   margin: auto;
   font-family: "Poppins", sans-serif;
-}
+} */
 .row-13 {
   margin: auto;
   margin-top: 75px;
@@ -806,3 +849,54 @@ select {
     width: 60px;
   }
 }
+@media only screen and (min-width: 300px) and (max-width: 900px) {
+  #container {
+      flex-direction: column;
+  }
+  .row-1 {
+      display: flex;
+      flex-direction: column;
+  }
+  .logo {
+      padding: 0px;
+      margin: auto;
+  }
+  .collapsible {
+      cursor: pointer;
+      padding: 18px;
+      border: none;
+      text-align: right;
+      outline: none;
+      font-size: 15px;
+      display: block;
+      background-color: rgb(235, 199, 235);
+  }
+  .collapsible > button {
+      color: #f72585;
+      border: #f72585 1px solid;
+      border-radius: 5px;
+      background-color: rgb(235, 199, 235);
+      width: 50px;
+      text-align: center;
+  }
+  .collapsible > a {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      background-color: #f1f1f1;
+      text-align: center;
+      margin: auto;
+    }
+  .active, .collapsible:hover {
+      background-color: rgb(235, 199, 235);
+    }
+  .row-13 {
+      flex-direction: column;
+      text-align: center;
+      padding: 0px;
+  }
+  .row-13 >  div {
+      margin: auto;
+      
+  }
+} 

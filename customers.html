@@ -21,22 +21,42 @@
     <title>Customers - Codecov</title>
   </head>
   <body>
-    <div id="navbar">
-      <div class="item-1">
-        <img
-          src="https://about.codecov.io/wp-content/themes/codecov/assets/brand/logos/codecov.svg"
-          alt=""
-        />
-      </div>
-      <div class="item-2"><p>Product</p></div>
-      <div class="item-3"><p>Solutions</p></div>
-      <div class="item-4"><p>Customers</p></div>
-      <div class="item-5"><p>Resources</p></div>
-      <div class="item-6"><p>Pricing</p></div>
-      <div class="item-7"><p>Contact</p></div>
-      <div class="item-8"><p>Login</p></div>
-      <div class="item-9"><button>Sign UP</button></div>
-    </div>
+    <div class="collapsible">
+      <button > NAV</button>
+  </div>
+  <div id="container">
+    <div class="row-1">
+      <a class="logo" href="codecov.html">
+          <img class="logo"
+              src="https://about.codecov.io/wp-content/themes/codecov/assets/brand/logos/codecov.svg"
+              title="Codecov" alt="Codecov" />
+      </a>
+      <a href="product.html">
+          <h5 class="products">Products</h5>
+      </a>
+      <a href="codecov.html">
+          <h5 class="solutions">Solutions</h5>
+      </a>
+      <a href="customers.html">
+          <h5 class="customers">Customers</h5>
+      </a>
+      <a href="resources.html">
+          <h5 class="resources">Resources</h5>
+      </a>
+      <a href="pricing.html">
+          <h5 class="pricing">Pricing</h5>
+      </a>
+      <a href="contact.html">
+          <h5 class="contact">Contact</h5>
+      </a>
+      <a href="codecov.html">
+          <h5 class="login">Login</h5>
+      </a>
+      <a href="sign-up.html">
+          <h5 class="signup">Sign Up</h5>
+      </a>
+  </div>
+  </div>
     <h1 class="heading">Our Customers</h1>
     <!-- 1 -->
     <div id="desc-cont">
@@ -463,5 +483,21 @@
         </div>
       </div>
     </div>
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function () {
+              this.classList.toggle("active");
+              var content = this.nextElementSibling;
+              if (content.style.display === "block") {
+                  content.style.display = "none";
+              } else {
+                  content.style.display = "block";
+              }
+          });
+      }
+  </script>
   </body>
 </html>
