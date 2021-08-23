@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- CODECOV -->
-
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,52 +16,32 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
       rel="stylesheet"
     />
-   <link rel="stylesheet" href="customers.css">
+    <link rel="stylesheet" href="customers.css" />
     <link rel="icon" href="fevicon.png" type="image/icon" />
     <title>Customers - Codecov</title>
   </head>
   <body>
-    <div class="collapsible">
-      <button > NAV</button>
-  </div>
-  <div id="container">
-    <div class="row-1">
-      <a class="logo" href="codecov.html">
-          <img class="logo"
-              src="https://about.codecov.io/wp-content/themes/codecov/assets/brand/logos/codecov.svg"
-              title="Codecov" alt="Codecov" />
-      </a>
-      <a href="product.html">
-          <h5 class="products">Products</h5>
-      </a>
-      <a href="codecov.html">
-          <h5 class="solutions">Solutions</h5>
-      </a>
-      <a href="customers.html">
-          <h5 class="customers">Customers</h5>
-      </a>
-      <a href="resources.html">
-          <h5 class="resources">Resources</h5>
-      </a>
-      <a href="pricing.html">
-          <h5 class="pricing">Pricing</h5>
-      </a>
-      <a href="contact.html">
-          <h5 class="contact">Contact</h5>
-      </a>
-      <a href="codecov.html">
-          <h5 class="login">Login</h5>
-      </a>
-      <a href="sign-up.html">
-          <h5 class="signup">Sign Up</h5>
-      </a>
-  </div>
-  </div>
+    <div id="navbar">
+      <div class="item-1">
+        <img
+          src="https://about.codecov.io/wp-content/themes/codecov/assets/brand/logos/codecov.svg"
+          alt=""
+        />
+      </div>
+      <div class="item-2"><p>Product</p></div>
+      <div class="item-3"><p>Solutions</p></div>
+      <div class="item-4"><p>Customers</p></div>
+      <div class="item-5"><p>Resources</p></div>
+      <div class="item-6"><p>Pricing</p></div>
+      <div class="item-7"><p>Contact</p></div>
+      <div class="item-8"><p>Login</p></div>
+      <div class="item-9"><button>Sign UP</button></div>
+    </div>
     <h1 class="heading">Our Customers</h1>
     <!-- 1 -->
     <div id="desc-cont">
       <div class="box" id="left">
-        <div><img src="udacity-logo.png" alt="" /></div>
+        <div><img src="https://about.codecov.io/wp-content/uploads/2021/04/udacity-logo.png" alt="" /></div>
         <p>
           I like that Codecov automates and gamifies things. The engineer can
           just flow right into it, figure out what's going on, get rid of their
@@ -116,7 +94,12 @@
     <!-- 2 -->
     <div id="desc-cont" class="unique">
       <div class="box" id="left">
-        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/templates/customers/containership.svg" alt="" /></div>
+        <div>
+          <img
+            src="https://about.codecov.io/wp-content/themes/codecov/assets/templates/customers/containership.svg"
+            alt=""
+          />
+        </div>
         <p>
           One of our favorite tools for open source repos @containershipio is
           easily @codecov. Code coverage checking automatically added to PRs
@@ -124,7 +107,7 @@
           too 🌈.
         </p>
         <p>
-          Matt Kelly <br>
+          Matt Kelly <br />
           Senior Software Engineer
         </p>
       </div>
@@ -137,7 +120,8 @@
         </div>
         <p>Open Source</p>
         <p>
-          Codecov believes in supporting the open source community. That is why Codecov will always be free for open source projects.
+          Codecov believes in supporting the open source community. That is why
+          Codecov will always be free for open source projects.
         </p>
         <p><span>Get Started &rarr;</span>Learn More &rarr;</p>
       </div>
@@ -167,7 +151,12 @@
     <!-- 3 -->
     <div id="desc-cont">
       <div class="box lg" id="left">
-        <div><img src="https://www.teamlewis.com/wp-content/uploads/2017/10/UJET_Primary-White.png" alt="" /></div>
+        <div>
+          <img
+            src="https://www.teamlewis.com/wp-content/uploads/2017/10/UJET_Primary-White.png"
+            alt=""
+          />
+        </div>
         <p>
           Codecov puts your test right in a place where everyone is looking.
           When I see red on the Codecov report I know it’s not up to our
@@ -266,7 +255,7 @@
           alt=""
         />
       </div>
-      <div class="item"><img src="gatsby.png" alt="" /></div>
+      <div class="item"><img src="https://img.icons8.com/fluent/452/gatsbyjs.png" alt="gats" /></div>
       <div class="item">
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYAQWfbcQ0gSfl_1d2k7pUuEuRTivO0LO6lmPH2Rp5BJzVPvPO2lJVNghc3-5GSpHQea8&usqp=CAU"
@@ -342,7 +331,7 @@
           alt=""
         />
       </div>
-      <div class="item"><img src="we_work.png" alt="" /></div>
+      <div class="item"><img src="https://www.pinclipart.com/picdir/middle/191-1911296_government-wework-logo-png-clipart.png" alt="" /></div>
       <div class="item margin">
         <img
           src="https://logos-download.com/wp-content/uploads/2021/01/Ntt_Data_Logo.png"
@@ -485,21 +474,5 @@
         </div>
       </div>
     </div>
-    <script>
-      var coll = document.getElementsByClassName("collapsible");
-      var i;
-
-      for (i = 0; i < coll.length; i++) {
-          coll[i].addEventListener("click", function () {
-              this.classList.toggle("active");
-              var content = this.nextElementSibling;
-              if (content.style.display === "block") {
-                  content.style.display = "none";
-              } else {
-                  content.style.display = "block";
-              }
-          });
-      }
-  </script>
   </body>
 </html>
