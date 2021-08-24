@@ -162,6 +162,9 @@ a{
         flex-direction: column-reverse;
 
     }
+    .articles{
+        margin: 2% 20%;
+    }
     .articles :nth-child(2n){
         display: block;
     }
