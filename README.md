@@ -24,4 +24,42 @@ You can also take the glimpse of our Project, just follow the below steps:
 ## Snapshots 📷
 
 1. Sign-up Page
-   /Users/shreevalikushe/Desktop/Masai/PT-WEB-1/Unit 2-Construct Week/images/Sign-up.png
+
+  ![image](https://github.com/shreevalikushe/Codecov_Clone/blob/master/images/Sign-up.png)
+  
+2. Landing Page
+
+  ![image](https://github.com/shreevalikushe/Codecov_Clone/blob/master/images/Landing%20Page.png)
+  
+3. Resources Page
+
+  ![image](https://github.com/shreevalikushe/Codecov_Clone/blob/master/images/Resources.png)
+  
+## Features ✨
+
+1. 7 near to perfect replica pages cloned
+2. Under small size screens Navbar collapse
+3. Website Responsiveness
+<br/>
+
+## Demo 🎥
+
+-Deployed Link: [Codecov-clone](https://codecov-clone-website.netlify.app/)
+
+
+<br/>
+
+## Team Members and Contributors 😇
+
+👤 **Shreevali Kushe**
+
+- Github: [Shreevali Kushe](https://github.com/shreevalikushe)
+
+👤 **Pratham Agarwal**
+
+- Github: [Pratham-Agarwal](https://github.com/pratham2002)
+
+👤 **Manoj Nishad**
+
+- Github: [Manoj Nishad](https://github.com/amnishad0512)
+
