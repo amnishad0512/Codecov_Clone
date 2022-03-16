@@ -22,41 +22,44 @@
   </head>
   <body>
     <div class="collapsible">
-      <button > NAV</button>
-  </div>
-  <div id="container">
-    <div class="row-1">
-      <a class="logo" href="codecov.html">
-          <img class="logo"
-              src="https://about.codecov.io/wp-content/themes/codecov/assets/brand/logos/codecov.svg"
-              title="Codecov" alt="Codecov" />
-      </a>
-      <a href="product.html">
+      <button>NAV</button>
+    </div>
+    <div id="container">
+      <div class="row-1">
+        <a class="logo" href="index.html">
+          <img
+            class="logo"
+            src="https://about.codecov.io/wp-content/themes/codecov/assets/brand/logos/codecov.svg"
+            title="Codecov"
+            alt="Codecov"
+          />
+        </a>
+        <a href="product.html">
           <h5 class="products">Products</h5>
-      </a>
-      <a href="codecov.html">
+        </a>
+        <a href="index.html">
           <h5 class="solutions">Solutions</h5>
-      </a>
-      <a href="customers.html">
+        </a>
+        <a href="customers.html">
           <h5 class="customers">Customers</h5>
-      </a>
-      <a href="resources.html">
+        </a>
+        <a href="resources.html">
           <h5 class="resources">Resources</h5>
-      </a>
-      <a href="pricing.html">
+        </a>
+        <a href="pricing.html">
           <h5 class="pricing">Pricing</h5>
-      </a>
-      <a href="contact.html">
+        </a>
+        <a href="contact.html">
           <h5 class="contact">Contact</h5>
-      </a>
-      <a href="codecov.html">
+        </a>
+        <a href="index.html">
           <h5 class="login">Login</h5>
-      </a>
-      <a href="sign-up.html">
+        </a>
+        <a href="sign-up.html">
           <h5 class="signup">Sign Up</h5>
-      </a>
-  </div>
-  </div>
+        </a>
+      </div>
+    </div>
     <!-- <div id="navbar">
       <div class="item-1">
         <img
@@ -77,7 +80,12 @@
     <!-- 1 -->
     <div id="desc-cont">
       <div class="box" id="left">
-        <div><img src="https://about.codecov.io/wp-content/uploads/2021/04/udacity-logo.png" alt="" /></div>
+        <div>
+          <img
+            src="https://about.codecov.io/wp-content/uploads/2021/04/udacity-logo.png"
+            alt=""
+          />
+        </div>
         <p>
           I like that Codecov automates and gamifies things. The engineer can
           just flow right into it, figure out what's going on, get rid of their
@@ -291,7 +299,9 @@
           alt=""
         />
       </div>
-      <div class="item"><img src="https://img.icons8.com/fluent/452/gatsbyjs.png" alt="gats" /></div>
+      <div class="item">
+        <img src="https://img.icons8.com/fluent/452/gatsbyjs.png" alt="gats" />
+      </div>
       <div class="item">
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYAQWfbcQ0gSfl_1d2k7pUuEuRTivO0LO6lmPH2Rp5BJzVPvPO2lJVNghc3-5GSpHQea8&usqp=CAU"
@@ -367,7 +377,12 @@
           alt=""
         />
       </div>
-      <div class="item"><img src="https://www.pinclipart.com/picdir/middle/191-1911296_government-wework-logo-png-clipart.png" alt="" /></div>
+      <div class="item">
+        <img
+          src="https://www.pinclipart.com/picdir/middle/191-1911296_government-wework-logo-png-clipart.png"
+          alt=""
+        />
+      </div>
       <div class="item margin">
         <img
           src="https://logos-download.com/wp-content/uploads/2021/01/Ntt_Data_Logo.png"
@@ -515,16 +530,16 @@
       var i;
 
       for (i = 0; i < coll.length; i++) {
-          coll[i].addEventListener("click", function () {
-              this.classList.toggle("active");
-              var content = this.nextElementSibling;
-              if (content.style.display === "block") {
-                  content.style.display = "none";
-              } else {
-                  content.style.display = "block";
-              }
-          });
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
       }
-  </script>
+    </script>
   </body>
 </html>

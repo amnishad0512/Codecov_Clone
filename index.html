@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- CODECOV -->
+  <head>
+    <title>Codecov - The Leading Code Coverage Solution</title>
+    <link rel="stylesheet" type="text/css" href="codecov.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="collapsible">
+        <button>NAV</button>
+      </div>
+      <div class="row-1">
+        <a class="logo" href="index.html">
+          <img
+            class="logo"
+            src="https://about.codecov.io/wp-content/themes/codecov/assets/brand/logos/codecov.svg"
+            title="Codecov"
+            alt="Codecov"
+          />
+        </a>
+        <a href="product.html">
+          <h5 class="products">Products</h5>
+        </a>
+        <a href="index.html">
+          <h5 class="solutions">Solutions</h5>
+        </a>
+        <a href="customers.html">
+          <h5 class="customers">Customers</h5>
+        </a>
+        <a href="resources.html">
+          <h5 class="resources">Resources</h5>
+        </a>
+        <a href="pricing.html">
+          <h5 class="pricing">Pricing</h5>
+        </a>
+        <a href="contact.html">
+          <h5 class="contact">Contact</h5>
+        </a>
+        <a href="index.html">
+          <h5 class="login">Login</h5>
+        </a>
+        <a href="sign-up.html">
+          <h5 class="signup">Sign Up</h5>
+        </a>
+      </div>
+      <div class="row-2">
+        <div class="row-2-content">
+          <h1>
+            Ship healthier code faster with less risk<span
+              class="content-pink-h1"
+              >.</span
+            >
+          </h1>
+          <p>
+            Join 1M+ developers worldwide in shipping healthier code with
+            <span class="content-pink">code coverage</span> from Codecov.
+          </p>
+        </div>
+        <img
+          class="row-2-img"
+          src="https://about.codecov.io/wp-content/themes/codecov/assets/templates/home/pull-request-comments.svg"
+        />
+        <div></div>
+      </div>
+      <div class="row-3">
+        <button>
+          <img
+            src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+          />GitHub
+        </button>
+        <button>
+          <img
+            src="data:image/png;base64,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"
+          />
+          GitLab
+        </button>
+        <button>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ6MZlYTEgCNqFkZzHpg3qFtQlAA_t6Y_YXg&usqp=CAU"
+          />Bitbucket
+        </button>
+      </div>
+      <div class="row-4">
+        <div class="row-4-1">
+          <h5>29,000+ ORGANIZATIONS ARE ALREADY USING CODECOV</h5>
+        </div>
+        <div class="row-4-2">
+          <a href="https://www.spotify.com/in-en/">Spotify</a>
+          <a href="https://www.grab.com/sg/">GRAB</a>
+          <a href="https://www.hpe.com/us/en/home.html">Hewlett Packard</a>
+          <a href="https://equityzen.com/">Equityzen</a>
+          <a href="">Paloalto</a>
+          <a href="https://www.wework.com/en-GB">Wework</a>
+        </div>
+      </div>
+      <h1>Development cycles are spinning faster than ever...</h1>
+      <div class="row-5">
+        <div class="row-5-1">
+          <img
+            src="https://about.codecov.io/wp-content/themes/codecov/assets/templates/home/devops.svg"
+          />
+        </div>
+        <div class="row-5-2">
+          <p>
+            With everything from doorbells to rockets running on code, it's more
+            important than ever to ensure quality code is being delivered with
+            every release.
+          </p>
+          <p>
+            Code coverage is one of the most important metrics companies rely on
+            to ship healthier code, faster, and with less risk.
+          </p>
+          <p>
+            Codecov gives companies actionable coverage insights when and where
+            they need them to ensure they are shipping quality code.
+          </p>
+        </div>
+      </div>
+      <h1>How Codecov helps...</h1>
+      <div class="row-6">
+        <div class="row-6-1">
+          <button>
+            <h3>Flexible / Unified reporting</h3>
+          </button>
+          <button>
+            <h3>Seamless coverage insights</h3>
+          </button>
+          <button>
+            <h3>Robust Coverage controls</h3>
+          </button>
+        </div>
+        <div class="row-6-2">
+          <p>
+            As long as your code has tests and your coverage tool can output
+            coverage results in a
+            <span class="row-6-span">compatible format</span>, you can use
+            Codecov.
+          </p>
+          <ul>
+            <li>Source Code Coverage</li>
+            <li>20+ Languages and CI/CD Agnostic</li>
+            <li>Report Merging</li>
+            <li>Coverage Isolation</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row-7">
+        <h1>Code Coverage For Any Tech Stack</h1>
+        <p>
+          Codecov provides highly integrated tools for developers and
+          engineering leaders to gain actionable visibility into their code
+          coverage.
+        </p>
+      </div>
+      <div class="row-8">
+        <img
+          src="https://about.codecov.io/wp-content/themes/codecov/assets/brand/features/multi.svg"
+        />
+        <div class="row-8-1">
+          <h6>LANGUAGE</h6>
+          <a href="https://about.codecov.io/language/python/" target="_blank"
+            >Python</a
+          >
+          <a
+            href="https://about.codecov.io/language/javascript/"
+            target="_blank"
+            >Javascript</a
+          >
+          <a href="https://about.codecov.io/language/ruby/" target="_blank"
+            >Ruby</a
+          >
+          <a href="https://about.codecov.io/language/java/" target="_blank"
+            >Java</a
+          >
+          <a
+            href="https://about.codecov.io/language/c/"
+            target="_blank"
+            class="badge badge-light-teal"
+            >C</a
+          >
+          <a href="https://about.codecov.io/language/go/" target="_blank">Go</a>
+          <a href="https://about.codecov.io/language/php/" target="_blank"
+            >PHP</a
+          >
+          <a href="https://about.codecov.io/language/scala/" target="_blank"
+            >Scala</a
+          >
+          <a href="https://about.codecov.io/language/apex/" target="_blank"
+            >Apex</a
+          >
+          <a href="https://about.codecov.io/language/bash/" target="_blank"
+            >Bash</a
+          >
+          <a href="https://about.codecov.io/language/c-sharp/" target="_blank"
+            >C#</a
+          >
+          <a
+            href="https://about.codecov.io/language/c-plus-plus/"
+            target="_blank"
+            >C++</a
+          >
+          <a href="https://about.codecov.io/language/clojure/" target="_blank"
+            >Clojure</a
+          >
+          <a href="https://about.codecov.io/language/kotlin/" target="_blank"
+            >Kotlin</a
+          >
+          <a href="https://about.codecov.io/language/dart/" target="_blank"
+            >Dart</a
+          >
+          <a href="https://about.codecov.io/language/rust/" target="_blank"
+            >Rust</a
+          >
+          <a href="https://about.codecov.io/language/f-sharp/" target="_blank"
+            >F#</a
+          >
+          <a href="https://about.codecov.io/language/elixir/" target="_blank"
+            >Elixir</a
+          >
+          <a href="https://about.codecov.io/language/d/" target="_blank">D</a>
+          <a href="https://about.codecov.io/language/erlang/" target="_blank"
+            >Erlang</a
+          >
+          <a href="https://about.codecov.io/language/fortran/" target="_blank"
+            >Fortran</a
+          >
+          <a href="https://about.codecov.io/language/groovy/" target="_blank"
+            >Groovy</a
+          >
+          <a
+            href="https://about.codecov.io/language/powershell/"
+            target="_blank"
+            >Powershell</a
+          >
+          <a href="https://about.codecov.io/language/haskell/" target="_blank"
+            >Haskell</a
+          >
+          <a href="https://about.codecov.io/language/julia/" target="_blank"
+            >Julia</a
+          >
+          <a href="https://about.codecov.io/language/lua/" target="_blank"
+            >Lua</a
+          >
+          <a
+            href="https://about.codecov.io/language/objective-c/"
+            target="_blank"
+            >Objective-C</a
+          >
+          <a href="https://about.codecov.io/language/perl/" target="_blank"
+            >Perl</a
+          >
+          <a href="https://about.codecov.io/language/r/" target="_blank">R</a>
+          <a
+            href="https://about.codecov.io/?post_type=language&#038;p=2834"
+            target="_blank"
+            >Swift</a
+          >
+          <a
+            href="https://about.codecov.io/language/typescript/"
+            target="_blank"
+            >Typescript</a
+          >
+          <a href="https://about.codecov.io/language/vala/" target="_blank"
+            >Vala</a
+          >
+          <a href="https://about.codecov.io/language/xcode/" target="_blank"
+            >Xcode</a
+          >
+          <a href="https://about.codecov.io/language/xtend/" target="_blank"
+            >Xtend</a
+          >
+        </div>
+        <div class="row-8-2">
+          <h6>CI PLATFORM</h6>
+          <a href="https://about.codecov.io/language/python/" target="_blank"
+            >Python</a
+          >
+          <a
+            href="https://about.codecov.io/language/javascript/"
+            target="_blank"
+            >Javascript</a
+          >
+          <a href="https://about.codecov.io/language/ruby/" target="_blank"
+            >Ruby</a
+          >
+          <a href="https://about.codecov.io/language/java/" target="_blank"
+            >Java</a
+          >
+          <a
+            href="https://about.codecov.io/language/c/"
+            target="_blank"
+            class="badge badge-light-teal"
+            >C</a
+          >
+          <a href="https://about.codecov.io/language/go/" target="_blank">Go</a>
+          <a href="https://about.codecov.io/language/php/" target="_blank"
+            >PHP</a
+          >
+          <a href="https://about.codecov.io/language/scala/" target="_blank"
+            >Scala</a
+          >
+          <a href="https://about.codecov.io/language/apex/" target="_blank"
+            >Apex</a
+          >
+          <a href="https://about.codecov.io/language/bash/" target="_blank"
+            >Bash</a
+          >
+          <a href="https://about.codecov.io/language/c-sharp/" target="_blank"
+            >C#</a
+          >
+          <a
+            href="https://about.codecov.io/language/c-plus-plus/"
+            target="_blank"
+            >C++</a
+          >
+          <a href="https://about.codecov.io/language/clojure/" target="_blank"
+            >Clojure</a
+          >
+          <a href="https://about.codecov.io/language/kotlin/" target="_blank"
+            >Kotlin</a
+          >
+          <a href="https://about.codecov.io/language/dart/" target="_blank"
+            >Dart</a
+          >
+          <a href="https://about.codecov.io/language/rust/" target="_blank"
+            >Rust</a
+          >
+          <a href="https://about.codecov.io/language/f-sharp/" target="_blank"
+            >F#</a
+          >
+          <a href="https://about.codecov.io/language/elixir/" target="_blank"
+            >Elixir</a
+          >
+          <a href="https://about.codecov.io/language/d/" target="_blank">D</a>
+          <a href="https://about.codecov.io/language/erlang/" target="_blank"
+            >Erlang</a
+          >
+          <a href="https://about.codecov.io/language/fortran/" target="_blank"
+            >Fortran</a
+          >
+          <a href="https://about.codecov.io/language/groovy/" target="_blank"
+            >Groovy</a
+          >
+          <a
+            href="https://about.codecov.io/language/powershell/"
+            target="_blank"
+            >Powershell</a
+          >
+          <a href="https://about.codecov.io/language/haskell/" target="_blank"
+            >Haskell</a
+          >
+          <a href="https://about.codecov.io/language/julia/" target="_blank"
+            >Julia</a
+          >
+          <a href="https://about.codecov.io/language/lua/" target="_blank"
+            >Lua</a
+          >
+          <a
+            href="https://about.codecov.io/language/objective-c/"
+            target="_blank"
+            >Objective-C</a
+          >
+          <a href="https://about.codecov.io/language/perl/" target="_blank"
+            >Perl</a
+          >
+          <a href="https://about.codecov.io/language/r/" target="_blank">R</a>
+          <a
+            href="https://about.codecov.io/?post_type=language&#038;p=2834"
+            target="_blank"
+            >Swift</a
+          >
+          <a
+            href="https://about.codecov.io/language/typescript/"
+            target="_blank"
+            >Typescript</a
+          >
+          <a href="https://about.codecov.io/language/vala/" target="_blank"
+            >Vala</a
+          >
+          <a href="https://about.codecov.io/language/xcode/" target="_blank"
+            >Xcode</a
+          >
+          <a href="https://about.codecov.io/language/xtend/" target="_blank"
+            >Xtend</a
+          >
+        </div>
+        <div class="row-8-3">
+          <h6>CODE HOSTS</h6>
+          <a href="https://about.codecov.io/tool/gitlab/" target="_blank"
+            >GitLab</a
+          >
+          <a href="https://about.codecov.io/tool/bitbucket/" target="_blank"
+            >Bitbucket</a
+          >
+          <a href="https://github.com/enterprise" target="_blank"
+            >GitHub Enterprise</a
+          >
+          <a href="https://about.gitlab.com/install/ce-or-ee/" target="_blank"
+            >GitLab CE / EE</a
+          >
+          <a href="https://bitbucket.org/product/enterprise" target="_blank"
+            >Bitbucket Server</a
+          >
+        </div>
+        <div class="row-8-4">
+          <h6>Cloud Platforms</h6>
+          <a
+            href="https://about.codecov.io/product/integration/google-cloud-platform/"
+            target="_blank"
+            >Google Cloud Platform</a
+          >
+          <a
+            href="https://about.codecov.io/product/integration/amazon-web-services/"
+            target="_blank"
+            >Amazon Web Services</a
+          >
+          <a
+            href="https://about.codecov.io/product/integration/microsoft-azure/"
+            target="_blank"
+            >Microsoft Azure</a
+          >
+        </div>
+      </div>
+      <div class="row-9">
+        <h1>Who else is covered?</h1>
+        <p>
+          Over 29K organizations and 1M+ developers trust Codecov to gain
+          visibility into their code coverage.
+        </p>
+        <a href="_blank">View Customers</a>
+      </div>
+      <div class="row-10">
+        <h1>Resources</h1>
+        <p>
+          Want to learn more about code coverage? View our library of resources
+          to start building a culture of coverage at your company.
+        </p>
+        <a href="_blank">
+          <p>View Resources</p>
+        </a>
+      </div>
+      <div class="row-11">
+        <div>
+          <img
+            src="https://about.codecov.io/wp-content/uploads/2021/03/flag-blog-postv3-cropped-2048x1081.png"
+          />
+          <p>BLOG POST</p>
+          <h4>Introducing Improved Flag Management With Automatic Flags</h4>
+          <hr />
+          <a href="_blank">
+            <p>Read Blog Post</p>
+          </a>
+        </div>
+        <div>
+          <img
+            src="https://about.codecov.io/wp-content/uploads/2021/02/2020-state-of-open-source-code-coverage.jpg"
+          />
+          <p>INFOGRAPHIC</p>
+          <h4>2020 State of Open Source Code Coverage</h4>
+          <hr />
+          <a href="_blank">
+            <p>View Infographic</p>
+          </a>
+        </div>
+        <div>
+          <img
+            src="https://about.codecov.io/wp-content/uploads/2021/02/8-factors-Influencing.png"
+          />
+          <p>BLOG POST</p>
+          <h4>8 Factors Influencing Your Approach to Code Coverage</h4>
+          <hr />
+          <a href="_blank">
+            <p>Read Blog Post</p>
+          </a>
+        </div>
+      </div>
+      <div class="row-12">
+        <h1>Ready to get covered?</h1>
+        <p>
+          Join over a million developers in shipping healthier code today. Sign
+          up with your code host below.
+        </p>
+        <button>
+          <img
+            src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+          />GitHub
+        </button>
+        <button>
+          <img
+            src="data:image/png;base64,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"
+          />
+          GitLab
+        </button>
+        <button>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ6MZlYTEgCNqFkZzHpg3qFtQlAA_t6Y_YXg&usqp=CAU"
+          />Bitbucket
+        </button>
+      </div>
+      <div class="row-13">
+        <div>
+          <h4>PRODUCT</h4>
+          <p>Features</p>
+          <p>Integrations</p>
+          <p>Documentations</p>
+          <p>API</p>
+          <p>Status</p>
+        </div>
+        <div>
+          <h4>SOLUTIONS</h4>
+          <p>Open Source</p>
+          <p>Enterprise</p>
+          <p>Startups</p>
+          <p>Enterprise</p>
+        </div>
+        <div>
+          <h4>CUSTOMERS</h4>
+          <p>Customers</p>
+          <p>Case Studies</p>
+          <p>Community</p>
+          <p>Swag</p>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <p>Webinars</p>
+          <p>Blog</p>
+          <p>Documentations</p>
+        </div>
+        <div>
+          <h4>COMPANY</h4>
+          <p>Team</p>
+          <p>Press</p>
+          <p>Careers</p>
+          <p>Write for us</p>
+        </div>
+        <div>
+          <h4>CONTACT US</h4>
+          <p>Contact</p>
+          <p>Demo</p>
+          <p>Support</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
